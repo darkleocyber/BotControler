@@ -7,4 +7,7 @@ except:
     print("Signature not found. Trying main...")
 
 # যদি main কাজ করে তবে এটিই ব্যবহার করুন
-TeleBotControl.main()
+import asyncio
+import TeleBotControl
+
+asyncio.run(TeleBotControl.main())
