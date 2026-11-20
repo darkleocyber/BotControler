@@ -1,11 +1,10 @@
+import asyncio
 import TeleBotControl
 import inspect
 
 try:
-    print("Auto_run arguments:", inspect.signature(Tarmuxset.auto_run))
-
-# যদি main কাজ করে তবে এটিই ব্যবহার করুন
-import asyncio
-import TeleBotControl
+    print("Main arguments:", inspect.signature(TeleBotControl.main))
+except Exception as e:
+    print("Signature not found:", e)
 
 asyncio.run(TeleBotControl.main())
